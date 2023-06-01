@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .list-group-item.active{
+            background-color: rgb(129, 129, 129);
+            border: 1px solid black;
+        }
+    </style>
+    <title>Examen</title>
+</head>
+<body>
+    <h1>Evaluacion del lenguaje php</h1>
+    <div class="container">
+        Alumno: <input type="text" name="nombre" class="form-control" placeholder="Teclea tu nombre" required>
+        <form action="practica4.php" method="POST">
+            <ul class="list-group" >
+                <li class="list-group-item active" aria-current="true">
+                    1.-¿Que es un avion?
+                </li>
+                <li class="list-group-item" s>
+                    <input type="radio" name="pregunta1" value="a"> a: Un vehiculo con ruedas usado para transporte urbano.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="b"> b: Un vehiculo mecanico más pesado que el aire que vuela horizontalmente propulsado por uno o más motores.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="c"> c: Un vehiculo que navega a traves del mar usando propulsores y aletas.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    2.-¿Que es un motor a reaccion?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="a"> a: Es un tipo de motor que descarga un chorro de fluido a gran velocidad para generar un empuje de acuerdo con las leyes de Newton.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="b"> b: Es un tipo de motor que usa pistones para mover las helices.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="c"> c: Es un tipo de motor que utiliza energia nuclear para mover las distintas partes del motor generando mucha fuerza de empuje y sustentacion.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    3.-¿Cual de estos aviones es ruso?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="a"> a: F22.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="b"> b: Su57.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="c"> c: J20.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    4.-¿Cual de estos aviones es de carga?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="a"> a: X02.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="b"> b: AC130.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="c"> c: AN225.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    5.-¿Que es un avion polivalente?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="a"> a: Aquel que ocupa mucho dinero para producirse.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="b"> b: Aquel que desempeña distintos roles.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="c"> c: Aquel que confunde a los radares mostrando varias posiciones.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    6.-¿Que significa mach?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="a"> a: La velocidad en la que un objeto rompe la barrera del sonido.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="b"> b: La velocidad en la que un objeto se rompe.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="c"> c: La fuerza con la que cuenta un objeto a grandes velocidades.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    7.-¿Que es la sustentacion?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="a"> a: Es la fuerza generada sobre un cuerpo que se desplaza a través de un fluido, de dirección perpendicular a la dirección de la corriente incidente.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="b"> b: Es la fuerza que un avion necesita para despegar segun el viento y su direccion.
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="c"> c: Es la fuerza que necesita un avion para no despresurizarse a grandes alturas.
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    8.-¿Para que sirve el posquemador en un motor a reaccion?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="a"> a: Para deshacerse del combustible sobrante
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="b"> b: Para propulsarse 
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="c"> c: Para liberar la temperatura del motor
+                </li>
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">
+                    9.-¿Cual de estas NO es una forma de despegar?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="a"> a: VTOL 
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="b"> b: Corriente de viento
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="c"> c: Catapulta magnetica
+                </li>
+            </ul>
+            <div>
+                <input type="submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
