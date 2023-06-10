@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar juego Ahorcado</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>practica 6</title>
+    <style>
+            .form-control{
+                width: 30%; 
+                text-align: center;
+            }
+            .btn.btn-primary{
+                background-color: green;
+                border: 1px solid black;
+                width: 20%;
+            }
+            .btn.btn-primary:hover{
+                background-color: red;
+                color: white;
+                opacity: 60%;
+            }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div> <br> </div>
-                <h1>Configurar juego</h1>
-            <hr>
-            <form action="practica6.php" method="POST">
-                <div class="form-group">
-                    <h4>Nombre del jugador:</h4> 
-                    <input type="text" name="jugador" placeholder="Teclee el nombre">
-                </div>
-                <div class="form-group">
-                    <h4>Palabra:</h4> 
-                    <input type="text" name="palabra" placeholder="Teclee la palabra">
-                </div>
-                <div class="form-group">
-                    <h4>Vidas:</h4> 
-                    <input type="text" name="vidas" placeholder="Teclee las vidas">
-                </div> 
-                <div>
-                    <br>
-                    <input type="submit" class="btn btn-primary">
-                </div>
-            </form>
+    <center>
+        <div class="container">
+            <div class="row">
+                <h1 style="margin-top: 7%;">Configurar Juego</h1><hr>
+                <form action="practica6.php" method="POST">
+                    <div class="form-group" style="margin-top: 5%;">
+                        <label for="">Nombre del jugador:</label>
+                        <input type="text" required name="jugador" class="form-control">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="">Palabra:</label>
+                        <input type="text" required name="palabra" class="form-control">
+                    </div><br>
+                    <div class="form-group">
+                        <label for=""># vidas:</label>
+                        <input type="number" required name="vidas" class="form-control">
+                    </div><br>
+                    <div>
+                        <input type="submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </center>
 </body>
 </html>
